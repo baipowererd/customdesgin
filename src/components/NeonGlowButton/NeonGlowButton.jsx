@@ -1,0 +1,88 @@
+import React from 'react';
+import './NeonGlowButton.css';
+
+const NeonGlowButton = () => {
+    return (
+        <button className="neon-glow-btn">
+            <span>Get Started</span>
+        </button>
+    );
+};
+
+export const code = `import React from 'react';
+import './NeonGlowButton.css';
+
+const NeonGlowButton = () => {
+  return (
+    <button className="neon-glow-btn">
+      <span>Get Started</span>
+    </button>
+  );
+};
+
+export default NeonGlowButton;
+
+/* CSS */
+/* Add this to NeonGlowButton.css */
+.neon-glow-btn {
+  position: relative;
+  padding: 12px 32px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  border-radius: 99px;
+  isolation: isolate;
+  background: #0f0f12;
+}
+
+.neon-glow-btn::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  z-index: -1;
+  background: linear-gradient(90deg, #ff007f, #7928ca, #0070f3);
+  border-radius: inherit;
+  background-size: 300% 300%;
+  animation: bg-pan 3s infinite alternate;
+  transition: opacity 0.3s;
+}
+
+.neon-glow-btn::after {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  z-index: -2;
+  background: linear-gradient(90deg, #ff007f, #7928ca, #0070f3);
+  border-radius: inherit;
+  background-size: 300% 300%;
+  animation: bg-pan 3s infinite alternate;
+  filter: blur(12px);
+  opacity: 0.6;
+  transition: opacity 0.3s, filter 0.3s;
+}
+
+.neon-glow-btn:hover::after {
+  opacity: 1;
+  filter: blur(20px);
+}
+
+.neon-glow-btn span {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes bg-pan {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+`;
+
+export default NeonGlowButton;
