@@ -1,0 +1,82 @@
+import React from 'react';
+import './EmeraldPricingCard.css';
+
+const EmeraldPricingCard = () => (
+  <div className="card-pricing-emerald">
+    <div className="badge">Pro Plan</div>
+    <div className="price">$29<span>/mo</span></div>
+    <div className="period">Billed annually</div>
+    <ul className="features">
+      <li>Unlimited projects</li>
+      <li>Priority support</li>
+      <li>Advanced analytics</li>
+      <li>Custom integrations</li>
+    </ul>
+    <button className="cta-btn">Get Started</button>
+  </div>
+);
+
+export const code = `
+.card-pricing-emerald {
+  width: 300px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: 32px 28px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+.card-pricing-emerald:hover {
+  border-color: #10b981;
+  box-shadow: 0 0 30px #064e3b;
+}
+.card-pricing-emerald .badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #10b981, #064e3b);
+  color: #fff;
+  font-size: 11px; font-weight: 700;
+  padding: 4px 14px;
+  border-radius: 99px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+}
+.card-pricing-emerald .price {
+  font-size: 48px; font-weight: 800; color: #fff;
+}
+.card-pricing-emerald .price span { font-size: 16px; color: rgba(255,255,255,0.5); font-weight: 400; }
+.card-pricing-emerald .period { font-size: 14px; color: rgba(255,255,255,0.4); margin-bottom: 24px; }
+.card-pricing-emerald .features {
+  list-style: none; padding: 0; margin: 0 0 28px;
+  text-align: left;
+}
+.card-pricing-emerald .features li {
+  padding: 8px 0;
+  color: rgba(255,255,255,0.7);
+  font-size: 14px;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+.card-pricing-emerald .features li::before {
+  content: '✓ ';
+  color: #10b981;
+  font-weight: 700;
+}
+.card-pricing-emerald .cta-btn {
+  width: 100%;
+  padding: 12px;
+  background: #10b981;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px; font-weight: 600;
+  cursor: pointer;
+  transition: filter 0.2s, transform 0.2s;
+}
+.card-pricing-emerald .cta-btn:hover {
+  filter: brightness(1.15);
+  transform: scale(1.03);
+}
+`;
+export default EmeraldPricingCard;

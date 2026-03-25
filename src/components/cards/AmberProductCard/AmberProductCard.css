@@ -1,0 +1,55 @@
+
+.card-product-amber {
+  width: 280px;
+  background: #111114;
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card-product-amber:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.5);
+}
+.card-product-amber .prod-img {
+  height: 180px;
+  background: linear-gradient(160deg, #1a1508, #78350f);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 60px;
+  position: relative;
+}
+.card-product-amber .prod-badge {
+  position: absolute; top: 12px; right: 12px;
+  background: #f59e0b;
+  color: #fff;
+  font-size: 11px; font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+.card-product-amber .prod-body { padding: 20px; }
+.card-product-amber .prod-name {
+  font-size: 16px; font-weight: 600; color: #fff; margin-bottom: 6px;
+}
+.card-product-amber .prod-desc {
+  font-size: 13px; color: rgba(255,255,255,0.5); margin-bottom: 16px;
+}
+.card-product-amber .prod-footer {
+  display: flex; justify-content: space-between; align-items: center;
+}
+.card-product-amber .prod-price {
+  font-size: 22px; font-weight: 800; color: #f59e0b;
+}
+.card-product-amber .prod-buy {
+  padding: 8px 18px;
+  background: transparent;
+  border: 1.5px solid #f59e0b;
+  color: #f59e0b;
+  border-radius: 8px;
+  font-size: 13px; font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.card-product-amber .prod-buy:hover {
+  background: #f59e0b;
+  color: #fff;
+}
