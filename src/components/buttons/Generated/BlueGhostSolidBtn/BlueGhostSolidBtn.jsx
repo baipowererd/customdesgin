@@ -1,0 +1,47 @@
+import React from 'react';
+import './BlueGhostSolidBtn.css';
+
+const BlueGhostSolidBtn = () => {
+  return (
+    <button className="btn-blue-ghostsolid">
+      <span>BlueGhostSolidBtn</span>
+    </button>
+  );
+};
+
+export const code = `import React from 'react';
+import './BlueGhostSolidBtn.css';
+
+const BlueGhostSolidBtn = () => {
+  return (
+    <button className="btn-blue-ghostsolid">
+      <span>BlueGhostSolidBtn</span>
+    </button>
+  );
+};
+
+export default BlueGhostSolidBtn;
+
+/* CSS */
+/* Add this to BlueGhostSolidBtn.css */
+
+.btn-blue-ghostsolid {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(255,255,255,0.6);
+  background-color: transparent;
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn-blue-ghostsolid:hover {
+  color: #fff;
+  background-color: #3b82f6;
+  border-color: #3b82f6;
+  box-shadow: 0 4px 15px #1e40af;
+}
+`;
+
+export default BlueGhostSolidBtn;

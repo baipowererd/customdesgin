@@ -1,0 +1,61 @@
+import React from 'react';
+import './IndigoDiagonalSwipeBtn.css';
+
+const IndigoDiagonalSwipeBtn = () => {
+  return (
+    <button className="btn-indigo-diagonalswipe">
+      <span>IndigoDiagonalSwipeBtn</span>
+    </button>
+  );
+};
+
+export const code = `import React from 'react';
+import './IndigoDiagonalSwipeBtn.css';
+
+const IndigoDiagonalSwipeBtn = () => {
+  return (
+    <button className="btn-indigo-diagonalswipe">
+      <span>IndigoDiagonalSwipeBtn</span>
+    </button>
+  );
+};
+
+export default IndigoDiagonalSwipeBtn;
+
+/* CSS */
+/* Add this to IndigoDiagonalSwipeBtn.css */
+
+.btn-indigo-diagonalswipe {
+  position: relative;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #a5b4fc;
+  background-color: #222;
+  border: 2px solid #222;
+  border-radius: 4px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: color 0.4s;
+  z-index: 1;
+}
+.btn-indigo-diagonalswipe::before {
+  content: '';
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background-color: #6366f1;
+  transform: translateX(-100%) rotate(45deg);
+  transform-origin: top left;
+  transition: transform 0.4s;
+  z-index: -1;
+}
+.btn-indigo-diagonalswipe:hover {
+  color: #fff;
+  border-color: #6366f1;
+}
+.btn-indigo-diagonalswipe:hover::before {
+  transform: translateX(0) rotate(0);
+}
+`;
+
+export default IndigoDiagonalSwipeBtn;

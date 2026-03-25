@@ -1,0 +1,17 @@
+
+.btn-indigo-gradientpan {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(45deg, #3730a3, #6366f1, #a5b4fc, #6366f1);
+  background-size: 300% 300%;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-position 0.5s, transform 0.2s;
+}
+.btn-indigo-gradientpan:hover {
+  background-position: 100% 50%;
+  transform: scale(1.05);
+}

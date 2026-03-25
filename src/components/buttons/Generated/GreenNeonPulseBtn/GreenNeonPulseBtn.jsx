@@ -1,0 +1,47 @@
+import React from 'react';
+import './GreenNeonPulseBtn.css';
+
+const GreenNeonPulseBtn = () => {
+  return (
+    <button className="btn-green-neonpulse">
+      <span>GreenNeonPulseBtn</span>
+    </button>
+  );
+};
+
+export const code = `import React from 'react';
+import './GreenNeonPulseBtn.css';
+
+const GreenNeonPulseBtn = () => {
+  return (
+    <button className="btn-green-neonpulse">
+      <span>GreenNeonPulseBtn</span>
+    </button>
+  );
+};
+
+export default GreenNeonPulseBtn;
+
+/* CSS */
+/* Add this to GreenNeonPulseBtn.css */
+
+.btn-green-neonpulse {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #86efac;
+  background-color: transparent;
+  border: 2px solid #22c55e;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 0 10px transparent;
+  transition: all 0.3s;
+}
+.btn-green-neonpulse:hover {
+  color: #fff;
+  background-color: #22c55e;
+  box-shadow: 0 0 15px #22c55e, 0 0 30px #22c55e;
+}
+`;
+
+export default GreenNeonPulseBtn;

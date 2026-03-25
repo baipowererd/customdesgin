@@ -1,0 +1,65 @@
+import React from 'react';
+import './CyanDoubleBorderBtn.css';
+
+const CyanDoubleBorderBtn = () => {
+  return (
+    <button className="btn-cyan-doubleborder">
+      <span>CyanDoubleBorderBtn</span>
+    </button>
+  );
+};
+
+export const code = `import React from 'react';
+import './CyanDoubleBorderBtn.css';
+
+const CyanDoubleBorderBtn = () => {
+  return (
+    <button className="btn-cyan-doubleborder">
+      <span>CyanDoubleBorderBtn</span>
+    </button>
+  );
+};
+
+export default CyanDoubleBorderBtn;
+
+/* CSS */
+/* Add this to CyanDoubleBorderBtn.css */
+
+.btn-cyan-doubleborder {
+  position: relative;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #67e8f9;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn-cyan-doubleborder::before, .btn-cyan-doubleborder::after {
+  content: '';
+  position: absolute;
+  width: 20px; height: 20px;
+  border: 2px solid transparent;
+  transition: 0.3s;
+}
+.btn-cyan-doubleborder::before {
+  top: 0; left: 0;
+  border-top-color: #06b6d4;
+  border-left-color: #06b6d4;
+}
+.btn-cyan-doubleborder::after {
+  bottom: 0; right: 0;
+  border-bottom-color: #06b6d4;
+  border-right-color: #06b6d4;
+}
+.btn-cyan-doubleborder:hover {
+  color: #06b6d4;
+  letter-spacing: 2px;
+}
+.btn-cyan-doubleborder:hover::before, .btn-cyan-doubleborder:hover::after {
+  width: 100%; height: 100%;
+}
+`;
+
+export default CyanDoubleBorderBtn;

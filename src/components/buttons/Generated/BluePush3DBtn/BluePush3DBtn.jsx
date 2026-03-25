@@ -1,0 +1,49 @@
+import React from 'react';
+import './BluePush3DBtn.css';
+
+const BluePush3DBtn = () => {
+  return (
+    <button className="btn-blue-push3d">
+      <span>BluePush3DBtn</span>
+    </button>
+  );
+};
+
+export const code = `import React from 'react';
+import './BluePush3DBtn.css';
+
+const BluePush3DBtn = () => {
+  return (
+    <button className="btn-blue-push3d">
+      <span>BluePush3DBtn</span>
+    </button>
+  );
+};
+
+export default BluePush3DBtn;
+
+/* CSS */
+/* Add this to BluePush3DBtn.css */
+
+.btn-blue-push3d {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #3b82f6;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 6px 0 #1e40af;
+  transition: all 0.1s;
+}
+.btn-blue-push3d:active {
+  transform: translateY(6px);
+  box-shadow: 0 0px 0 #1e40af;
+}
+.btn-blue-push3d:hover {
+  filter: brightness(1.1);
+}
+`;
+
+export default BluePush3DBtn;

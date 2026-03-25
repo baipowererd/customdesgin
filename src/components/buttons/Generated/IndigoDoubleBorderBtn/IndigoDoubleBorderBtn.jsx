@@ -1,0 +1,65 @@
+import React from 'react';
+import './IndigoDoubleBorderBtn.css';
+
+const IndigoDoubleBorderBtn = () => {
+  return (
+    <button className="btn-indigo-doubleborder">
+      <span>IndigoDoubleBorderBtn</span>
+    </button>
+  );
+};
+
+export const code = `import React from 'react';
+import './IndigoDoubleBorderBtn.css';
+
+const IndigoDoubleBorderBtn = () => {
+  return (
+    <button className="btn-indigo-doubleborder">
+      <span>IndigoDoubleBorderBtn</span>
+    </button>
+  );
+};
+
+export default IndigoDoubleBorderBtn;
+
+/* CSS */
+/* Add this to IndigoDoubleBorderBtn.css */
+
+.btn-indigo-doubleborder {
+  position: relative;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #a5b4fc;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn-indigo-doubleborder::before, .btn-indigo-doubleborder::after {
+  content: '';
+  position: absolute;
+  width: 20px; height: 20px;
+  border: 2px solid transparent;
+  transition: 0.3s;
+}
+.btn-indigo-doubleborder::before {
+  top: 0; left: 0;
+  border-top-color: #6366f1;
+  border-left-color: #6366f1;
+}
+.btn-indigo-doubleborder::after {
+  bottom: 0; right: 0;
+  border-bottom-color: #6366f1;
+  border-right-color: #6366f1;
+}
+.btn-indigo-doubleborder:hover {
+  color: #6366f1;
+  letter-spacing: 2px;
+}
+.btn-indigo-doubleborder:hover::before, .btn-indigo-doubleborder:hover::after {
+  width: 100%; height: 100%;
+}
+`;
+
+export default IndigoDoubleBorderBtn;

@@ -1,0 +1,36 @@
+
+.btn-orange-doubleborder {
+  position: relative;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fdba74;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn-orange-doubleborder::before, .btn-orange-doubleborder::after {
+  content: '';
+  position: absolute;
+  width: 20px; height: 20px;
+  border: 2px solid transparent;
+  transition: 0.3s;
+}
+.btn-orange-doubleborder::before {
+  top: 0; left: 0;
+  border-top-color: #f97316;
+  border-left-color: #f97316;
+}
+.btn-orange-doubleborder::after {
+  bottom: 0; right: 0;
+  border-bottom-color: #f97316;
+  border-right-color: #f97316;
+}
+.btn-orange-doubleborder:hover {
+  color: #f97316;
+  letter-spacing: 2px;
+}
+.btn-orange-doubleborder:hover::before, .btn-orange-doubleborder:hover::after {
+  width: 100%; height: 100%;
+}

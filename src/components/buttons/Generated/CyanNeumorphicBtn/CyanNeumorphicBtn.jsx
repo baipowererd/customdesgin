@@ -1,0 +1,48 @@
+import React from 'react';
+import './CyanNeumorphicBtn.css';
+
+const CyanNeumorphicBtn = () => {
+  return (
+    <button className="btn-cyan-neumorphic">
+      <span>CyanNeumorphicBtn</span>
+    </button>
+  );
+};
+
+export const code = `import React from 'react';
+import './CyanNeumorphicBtn.css';
+
+const CyanNeumorphicBtn = () => {
+  return (
+    <button className="btn-cyan-neumorphic">
+      <span>CyanNeumorphicBtn</span>
+    </button>
+  );
+};
+
+export default CyanNeumorphicBtn;
+
+/* CSS */
+/* Add this to CyanNeumorphicBtn.css */
+
+.btn-cyan-neumorphic {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #67e8f9;
+  background-color: #1a1a1e;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 6px 6px 12px #0d0d10, -6px -6px 12px #27272c;
+  transition: all 0.2s;
+}
+.btn-cyan-neumorphic:hover {
+  color: #06b6d4;
+}
+.btn-cyan-neumorphic:active {
+  box-shadow: inset 6px 6px 12px #0d0d10, inset -6px -6px 12px #27272c;
+}
+`;
+
+export default CyanNeumorphicBtn;
