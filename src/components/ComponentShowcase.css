@@ -1,0 +1,126 @@
+.showcase-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.showcase-card:hover {
+    border-color: var(--border-highlight);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.showcase-header {
+    padding: 1.5rem;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.showcase-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    color: #fff;
+}
+
+.showcase-description {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    max-width: 300px;
+}
+
+.showcase-tabs {
+    display: flex;
+    background: var(--bg-tertiary);
+    padding: 0.25rem;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+}
+
+.tab-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background: transparent;
+    color: var(--text-secondary);
+    font-family: inherit;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: var(--radius-sm);
+    transition: all var(--transition-fast);
+}
+
+.tab-btn:hover {
+    color: var(--text-primary);
+}
+
+.tab-btn.active {
+    background: var(--bg-secondary);
+    color: var(--accent-primary);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.showcase-content {
+    position: relative;
+    min-height: 250px;
+    background: var(--bg-primary);
+}
+
+.preview-container {
+    padding: 3rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 250px;
+    background: radial-gradient(circle at center, rgba(30, 30, 35, 0.5) 0%, transparent 70%);
+}
+
+.preview-canvas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.code-container {
+    position: relative;
+}
+
+.code-container pre {
+    margin: 0 !important;
+    height: 250px;
+    overflow: auto;
+}
+
+.copy-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    background: rgba(40, 40, 45, 0.8);
+    border: 1px solid var(--border-color);
+    color: var(--text-secondary);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 0.8rem;
+    backdrop-filter: blur(8px);
+    transition: all var(--transition-fast);
+}
+
+.copy-btn:hover {
+    background: var(--bg-tertiary);
+    color: var(--text-primary);
+    border-color: var(--border-highlight);
+}

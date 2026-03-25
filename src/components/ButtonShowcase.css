@@ -1,0 +1,128 @@
+/* ──── Color Bar ──── */
+.color-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    border-top: 1px solid var(--border-color);
+    background: rgba(255, 255, 255, 0.015);
+}
+
+.color-bar-left {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--text-secondary);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.color-swatches {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.swatch {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: transform 0.15s, border-color 0.15s, box-shadow 0.15s;
+    padding: 0;
+    font-size: 0;
+}
+
+.swatch:hover {
+    transform: scale(1.2);
+}
+
+.swatch.active {
+    border-color: var(--text-primary);
+    box-shadow: 0 0 0 2px var(--border-highlight);
+    transform: scale(1.15);
+}
+
+.swatch-custom {
+    background: conic-gradient(red, yellow, lime, cyan, blue, magenta, red) !important;
+    font-size: 10px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
+}
+
+/* ──── Custom Picker ──── */
+.custom-picker {
+    padding: 14px 16px;
+    border-top: 1px solid var(--border-color);
+    background: var(--bg-tertiary);
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.picker-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.picker-row label {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    min-width: 70px;
+}
+
+.picker-row input[type="color"] {
+    width: 32px;
+    height: 32px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 2px;
+    background: transparent;
+}
+
+.picker-row input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+.picker-row input[type="color"]::-webkit-color-swatch {
+    border: none;
+    border-radius: 5px;
+}
+
+.hex-val {
+    font-size: 12px;
+    font-family: 'SF Mono', 'Fira Code', monospace;
+    color: var(--text-secondary);
+    background: var(--border-color);
+    padding: 3px 8px;
+    border-radius: 4px;
+}
+
+/* ──── Preview Area ──── */
+.preview-area {
+    display: flex;
+    flex-direction: column;
+}
+
+.preview-area .preview-canvas {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+    padding: 40px 20px;
+    background: radial-gradient(circle at center, var(--preview-glow, rgba(30, 30, 35, 0.5)) 0%, transparent 70%);
+}
