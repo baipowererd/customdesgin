@@ -1,0 +1,89 @@
+import React from 'react';
+import './GlassButton.css';
+
+const GlassButton = () => {
+    return (
+        <button className="glass-btn">
+            <div className="glass-reflection"></div>
+            <span>Glass Morphism</span>
+        </button>
+    );
+};
+
+export const code = `import React from 'react';
+import './GlassButton.css';
+
+const GlassButton = () => {
+  return (
+    <button className="glass-btn">
+      <div className="glass-reflection"></div>
+      <span>Glass Morphism</span>
+    </button>
+  );
+};
+
+export default GlassButton;
+
+/* CSS */
+/* Add this to GlassButton.css */
+.glass-btn {
+  position: relative;
+  padding: 14px 36px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.glass-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.glass-btn:active {
+  transform: translateY(0);
+}
+
+.glass-reflection {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.1) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-20deg);
+  animation: none;
+}
+
+.glass-btn:hover .glass-reflection {
+  animation: shine 1.5s ease;
+}
+
+.glass-btn span {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes shine {
+  0% { left: -100%; }
+  100% { left: 200%; }
+}
+`;
+
+export default GlassButton;
