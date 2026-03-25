@@ -1,0 +1,51 @@
+
+.footer-minimal-violet {
+  width: 100%;
+  background: #08080a;
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 16px;
+  overflow: hidden;
+}
+.footer-minimal-violet .footer-cta-section {
+  padding: 40px;
+  text-align: center;
+  background: linear-gradient(135deg, #4c1d9544, transparent);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.footer-minimal-violet .cta-title {
+  font-size: 24px; font-weight: 700; color: #fff;
+  margin-bottom: 8px;
+}
+.footer-minimal-violet .cta-sub {
+  font-size: 14px; color: rgba(255,255,255,0.45);
+  margin-bottom: 20px;
+}
+.footer-minimal-violet .cta-button {
+  padding: 12px 28px;
+  background: #8b5cf6; color: #fff;
+  border: none; border-radius: 8px;
+  font-size: 14px; font-weight: 600;
+  cursor: pointer;
+  transition: filter 0.2s, transform 0.2s;
+}
+.footer-minimal-violet .cta-button:hover {
+  filter: brightness(1.15);
+  transform: translateY(-2px);
+}
+.footer-minimal-violet .footer-bar {
+  padding: 20px 40px;
+  display: flex; justify-content: space-between; align-items: center;
+  flex-wrap: wrap; gap: 12px;
+}
+.footer-minimal-violet .footer-links {
+  display: flex; gap: 24px;
+}
+.footer-minimal-violet .footer-links a {
+  font-size: 13px; color: rgba(255,255,255,0.4);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.footer-minimal-violet .footer-links a:hover { color: #8b5cf6; }
+.footer-minimal-violet .footer-copy {
+  font-size: 12px; color: rgba(255,255,255,0.25);
+}
